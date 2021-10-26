@@ -1,0 +1,8 @@
+﻿Práctica 8:  Introducir en un código java de NetBeans las siguientes líneas:
+        int entero;
+       double real = 3.5;
+       entero = (int)real;
+       System.out.println(entero);
+¿ genera algún error ? ¿ qué número muestra ?
+
+El programa funciona y muestra el numero 3, debido a que esta redondeando el numero introducido en la variable.

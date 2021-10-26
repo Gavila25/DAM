@@ -1,0 +1,14 @@
+﻿Práctica 5:  Introducir en un código java de NetBeans las siguientes línea:
+
+int numero = 0x10;
+System.out.println(numero);
+
+¿qué número aparece en pantalla?
+	El numero que aparece es el 16.
+
+Pon ahora la siguiente línea:
+
+System.out.println(067);
+
+¿ qué número muestra ahora ? ¿67?
+	Muestra el numero 55
