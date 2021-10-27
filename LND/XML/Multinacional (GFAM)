@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE multinacional [
+	<!ELEMENT multinacional (futuros+,divisas+,bonos+,letras+)>
+
+	<!ELEMENT futuros (producto+, mercado?,precios+,paisProducAnt)>
+		<!ELEMENT producto (#PCDATA)>
+		<!ELEMENT mercado (#PCDATA)>
+		<!ELEMENT precios (#PCDATA)>
+		<!ELEMENT paisProducAnt (#PCDATA)>
+
+	<!ELEMENT divisas (nombre+,estable?, cambioMoneda+, precios+,paisProducAnt+)>
+		<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT cambioMoneda (#PCDATA)>
+		<!ELEMENT precios (#PCDATA)>
+		<!ELEMENT paisProducAnt (#PCDATA)>
+		<!ELEMENT estable (#PCDATA)>
+
+	<!ELEMENT bonos (precios+, paisProducAnt+, estable?, paisDeProcedencia+, valorDeseado+, valorMinimo+, valorMinimo+)>
+		<!ELEMENT precios(#PCDATA)>
+		<!ELEMENT paisProducAnt (#PCDATA)>
+		<!ELEMENT estable (#PCDATA)>
+		<!ELEMENT paisDeProcedencia (#PCDATA)>
+		<!ELEMENT valorDeseado (#PCDATA)>
+		<!ELEMENT valorMinimo (#PCDATA)>
+		<!ELEMENT valorMaximo (#PCDATA)>
+
+	<!ELEMENT letras (interesPagadero+, paisProducAnt+, precios+,paisEmisor+)>
+		<!ELEMENT interesPagadero (#PCDATA)>
+		<!ELEMENT paisProducAnt(#PCDATA)>
+		<!ELEMENT precios (#PCDATA)>
+		<!ELEMENT paisEmisor (#PCDATA)>
+
+]>
+
+
+
+
+<multinacional>
+	<futuros> 
+		<producto> </producto>
+		<mercado> </mercado>
+		<precios cantidad="" monedaInt=""/>
+		<paisProducAnt> </paisProducAnt>
+	</futuros>
+
+	<divisas>
+		<nombre> </nombre>
+		<cambioMoneda> </cambioMoneda>
+		<precios cantidad="" monedaInt=""/>
+		<paisProducAnt> </paisProducAnt>
+		<estable> </estable>
+	</divisas>
+
+	<bonos>
+		<precios cantidad="" monedaInt=""/>
+		<paisProducAnt> </paisProducAnt>
+		<estable> </estable>
+		<paisDeProcedencia> </paisDeProcedencia>
+		<valorDeseado> </valorDeseado>
+		<valorMinimo> </valorMinimo>
+		<valorMaximo> </valorMaximo>
+	</bonos>
+
+	<letras>
+		<interesPagadero> </interesPagadero>
+		<paisEmisor> </paisEmisor>
+		<precios cantidad="" monedaInt=""/>
+		<paisProducAnt> </paisProducAnt>
+	</letras>
+
+</multinacional>
+	

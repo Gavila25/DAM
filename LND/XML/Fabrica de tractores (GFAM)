@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE fabricaDeTractores [
+	<!ELEMENT pedido (tractor+,componente+, peso+, fragil+,nofragil+,fechaDeEntrega+,numeroDeSerie+,kmmaximos+)>
+
+	<!ELEMENT marca (#PCDATA)>
+	<!ELEMENT peso (#PCDATA)>
+
+	<!ELEMENT fechaDeEntrega (dia?, mes+, anio+)>
+		<!ELEMENT dia (#PCDATA)>
+		<!ELEMENT mes (#PCDATA)>
+		<!ELEMENT anio (#PCDATA)>
+
+	<!ELEMENT fragil (#PCDATA)>
+	<!ELEMENT nofragil(#PCDATA)>
+	<!ELEMENT numeroDeSerie(#PCDATA)>
+	<!ELEMENT kmmaximos (#PCDATA)>
+
+]>
+
+
+<fabricaDeTractores>
+
+	<pedido>
+		<tractor>
+			<componente>
+				<marca nombreDelFabricante=""/>
+				<peso numero="" unidad="KG"/>
+				<fechaDeEntrega>
+					<dia> </dia> <mes> </mes> <anio> </anio>
+				</fechaDeEntrega>
+				<fragil/>
+				<numeroDeSerie> </numeroDeSerie>
+				<kmmaximos> </kmmaximos>
+			</componente>
+			<componente>
+				<marca nombreDelFabricante=""/>
+				<peso numero="" unidad="KG"/>
+				<fechaDeEntrega>
+					<dia> </dia> <mes> </mes> <anio> </anio>
+				</fechaDeEntrega>
+				<nofragil/>
+				<numeroDeSerie> </numeroDeSerie>
+				<kmmaximos> </kmmaximos>
+			</componente>
+		</tractor>
+	</pedido>
+</fabricaDeTractores>

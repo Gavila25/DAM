@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-7" Standalone="yes"?>
+
+<!DOCTYPE listadocurso [
+<!ELEMENT (curso+)>
+	
+	<!ELEMENT alumno(alumo+,dni+,nombre*,apellidos+,apellido1*,apellido2?)>
+
+		<!ELEMENT alumno (#PCDATA)>
+		<!ELEMENT DNI (#PCDATA)>
+		<!ELEMENT apellidos (apellido1*,apellido2+)>
+		<!ELEMENT apellido1 (#PCDATA)>
+		<!ELEMENT apellido2 (#PCDATA)>
+
+	<!ELEMENT asignaturas(asignatura+,codigoAsignatura*)>
+	<!ELEMENT asignatura (#PCDATA)>
+	<!ELEMENT codigoAsignatura (#PCDATA)>
+	<!ELEMENT profesor (NRP*,nombre*,apellidos, apellido1*, apellido2?)>
+		<!ELEMENT NRP (#PCDATA)>
+		
+
+]>
+	
+
+<listadocursos>
+	<curso>
+		<alumnos>
+			<alumno numero="1">
+				<DNI> 43489286N </DNI>
+				<nombre>Guillermo</nombre>
+				<apellidos>
+					<apellido1> Avila </apellido1>
+					<apellido2> Martín </apellido2>
+				</apellidos>
+			</alumno>
+		</alumnos>
+
+		<asignaturas>
+			<asignatura nombre="Lenguaje de Marcas"/>
+			<codigoAsignatura numero="LDN1"/>
+			<profesor>
+			<NRP> 666 </NRP>
+			<nombre> Joatham </nombre>
+			<apellidos>
+				<apellido1> Pérez </apellido1>
+				<apellido2> </apellido2>
+			</apellidos>
+			<DNI>5555555J</DNI> 
+		</asignaturas>
+	</curso>
+</listadocursos>

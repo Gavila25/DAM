@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE seguridadSocial [
+  <!ELEMENT seguridadSocial (afiliados,listadoDeBajas,listadoDePrestacionesCobradas)>
+    <!ELEMENT afiliado (nombre,apellidos,dni,situacionLaboral,fechaDeNacimiento)>
+    	<!ELEMENT nombre (#PCDATA)>
+    	<!ELEMENT apellidos (#PCDATA)>
+    	<!ELEMENT dni (#PCDATA)>
+    	<!ELEMENT situacionLaboral (#PCDATA)>
+    	<!ELEMENT fechaDeNacimiento (#PCDATA)>
+
+    <!ELEMENT listadoDeBajas (numeroDeBajas,causa,fechaDeInicio,fechaFinal)>
+    	<!ELEMENT numeroDeBajas (#PCDATA)>
+    	<!ELEMENT causa (#PCDATA)>
+    	<!ELEMENT fechaDeInicio (#PCDATA)>
+    	<!ELEMENT fechaFinal (#PCDATA)>
+    	
+    <!ELEMENT listadoDePrestacionesCobradas (cantidadPercibida,fechaDePagoInical,fechaDePagoFinal)>
+    	<!ELEMENT cantidadPercibida (#PCDATA)>
+    	<!ELEMENT fechaDePagoInical (#PCDATA)>
+    	<!ELEMENT fechaDePagoFinal (#PCDATA)>
+
+]>
+
+<seguridadSocial>
+	<afiliados>
+		<afiliado numero="1"> </afiliado>
+		<dni>43487680J </dni>
+		<nombre>Santiago </nombre>
+		<apellidos>
+			<apellido numero="1"> Martin </apellido>
+			<apellido numero="2"> Messi </apellido>
+		</apellidos>
+		<situacionLaboral> en paro </situacionLaboral>
+		<fechaDeNacimiento dia="2" mes="07" anio="1999"> </fechaDeNacimiento>
+	</afiliados>
+
+	<listadoDeBajas>
+		<numeroDeBajas> 1 </numeroDeBajas>
+		<causa> Fractura del dedo índice de la mano izq </causa>
+		<fechaDeInicio dia="24" mes="06" anio="2021"/>
+		<fechaFinal dia="26" mes="06" anio="2021"/>
+	</listadoDeBajas>
+
+
+	<listadoDePrestacionesCobradas>
+		<cantidadPercibida cantidad="60" unidad="Euros"/>
+		<fechaDePagoInical dia="24" mes="06" anio="2021"/>
+		<fechaDePagoFinal dia="26" mes="06" anio="2021"/>
+	</listadoDePrestacionesCobradas>
+</seguridadSocial>
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE listaPersonas [
+	<!ELEMENT listaPersonas (nombre+, nacimiento+, direccion+,sexo+)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT nacimiento EMPTY>
+	<!ATTLIST nacimiento
+		dia CDATA #REQUIRED
+		mes CDATA #REQUIRED
+		anyo CDATA #REQUIRED>
+	<!ELEMENT direccion (calle, poblacion, provincia, cpostal)>
+	<!ELEMENT calle (#PCDATA)>
+	<!ELEMENT poblacion (#PCDATA)>
+	<!ELEMENT provincia (#PCDATA)>
+	<!ELEMENT cpostal (#PCDATA)>
+	<!ELEMENT sexo (#PCDATA)>
+]>
+
+
+<listaPersonas>
+	<nombre> Juan Prado </nombre>
+	<nacimiento dia="10" mes="Abril" anyo="1982"/>
+	<direccion>
+		<calle> Caoba,1 </calle>
+		<poblacion> Madrid </poblacion>
+		<provincia> Madrid </provincia>
+		<cpostal> 28005 </cpostal>
+	</direccion>
+	<sexo> Varon </sexo>
+</listaPersonas>

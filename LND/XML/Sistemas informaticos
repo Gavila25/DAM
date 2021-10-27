@@ -1,0 +1,37 @@
+<?xml version="1" encoding="iso-8859-1"?>
+
+<instituto> I.E.S Puerto de la Cruz </instituto>
+<Curso> 2021-2022 </Curso>
+	<inicio_del_curso> 15 de septiembre de 2021 </inicio_del_curso>
+	<fin_del_curso> 30 de junio de 2022 </fin_del_curso>
+
+<listado_alumnado>
+
+	<alumno nombre="Ana" apellidos="Fernández Gutiérrez"/>
+	<nif> 16965696L </nif>
+	<numero_de_telefono> 789654321 </numero_de_telefono>
+	<email> ana.fdezgtrrez@hotmail.com </email>
+	<dirección calle="El Percebe" numero="13" />
+	<provincia> Santander </provincia>
+	<codigo_postal> 39302 </codigo_postal>
+	<faltas numerodefaltas="No registradas"/>
+	<notas> No registradas </notas>
+
+	<alumno nombre="Pepito Grillo"/>
+	<nif> 98765432H </nif>
+	<numero_de_telefono> 656566555 </numero_de_telefono>
+	<email> yhyh@yahoo.com </email>
+	<dirección calle="Avd. El Pez"numero="5"/>
+	<provincia> Suances </provincia>
+	<codigo_postal> 39401 </codigo_postal>
+	<faltas numerodefaltas="No tiene"/>
+	<notas> Apto </notas>
+
+</listado_alumnado>
+
+<clases_impartidas>
+		<asignatura> Lenguaje de Marcas </asignatura>
+		<asignatura> Sistemas de gestión de información </asignatura>
+		<horas_impartidas numero de horas impartidas="4h semanales"/>
+		<caracter_de_asistencia> Obligatorio </caracter_de_asistencia>
+</clases_impartidas>

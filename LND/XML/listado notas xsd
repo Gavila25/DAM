@@ -1,0 +1,18 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="lista_de_notas" type="xsd:string"/>
+  <xsd:element name="nota" type="xsd:string"/>
+  <xsd:element name="para" type="xsd:string"/>
+  <xsd:element name="de" type="xsd:string"/>
+  <xsd:element name="titulo" type="xsd:string"/>
+  <xsd:element name="contenido" type="xsd:string"/>
+</xsd:schema>
+
+<lista_de_notas>
+<nota>
+  <para>Pedro</para>
+  <de>Laura</de>
+  <titulo>Recordatorio</titulo>
+  <contenido>A las 7:00 pm en la puerta del teatro</contenido>
+</nota>
+</lista_de_notas>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<agenda>
+<contacto>
+<nombre> Guillermo Fco. </nombre>
+<apellidos> Avila Martín </apellidos>
+<direccion calle="Calle Valois" numero="11" piso="1"> 
+<poblacion> Puerto de la Cruz </poblacion>
+<provincia> Santa Cruz de Tenerife </provincia>
+<codigo_postal> 38400 </codigo_postal>
+</direccion>
+<telefonos>
+<telefono_casa> 922 38 99 72 </telefono_casa>
+<telefono_movil> 630 89 54 32 </telefono_movil>
+<telefono_trabajo> 922 87 97 19 </telefono_trabajo>
+</telefonos>
+</contacto>
+</agenda>

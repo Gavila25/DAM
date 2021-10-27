@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE Almacendepedidos [
+
+	<!ELEMENT plantas (planta1,planta2,planta3,planta4)>
+		<!ELEMENT planta1 (nombre*)>
+			<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT planta2 (nombre*)>
+			<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT planta3 (nombre*)>
+			<!ELEMENT nombre (#PCDATA)>
+		<!ELEMENT planta4 (nombre*)>
+
+	<!ELEMENT flores (flor1,flor2)>
+		<!ELEMENT flor1 (nombre*, color?)>
+			<!ELEMENT nombre (#PCDATA)>
+			<!ELEMENT color (#PCDATA)>
+		<!ELEMENT flor2 (nombre*, color?)>
+			<!ELEMENT nombre (#PCDATA)>
+			<!ELEMENT color (#PCDATA)>
+
+	<!ELEMENT utensilios (utensilio1,utensilio2,utensilio3,utensilio4)>
+		<!ELEMENT utensilio1 (cantidad,nombre)>
+			<!ELEMENT cantidad (#PCDATA)>
+			<!ELEMENT nombre(#PCDATA)>
+
+		<!ELEMENT utensilio2 (cantidad,nombre)>
+			<!ELEMENT cantidad (#PCDATA)>
+			<!ELEMENT nombre (#PCDATA)>
+
+		<!ELEMENT utensilio3(cantidad,nombre)>
+			<!ELEMENT cantidad (#PCDATA)>
+			<!ELEMENT nombre (#PCDATA)>
+
+		<!ELEMENT utensilio4(cantidad,nombre)>
+			<!ELEMENT cantidad (#PCDATA)>
+			<!ELEMENT nombre (#PCDATA)>
+]>
+
+
+
+<Almacendepedidos>
+	<plantas>
+		<planta1>
+			<nombre> </nombre>
+		</planta1>
+
+		<planta2>
+			<nombre> </nombre>
+		</planta2>
+
+		<planta3>
+			<nombre> </nombre>
+		</planta3>
+
+		<planta4>
+			<nombre> </nombre>
+		</planta4>
+	</plantas>
+
+	<flores>
+		<flor1>
+			<nombre> </nombre>
+			<color> </color>
+		</flor1>
+
+		<flor2>
+			<nombre> </nombre>
+			<color> </color>
+		</flor2>
+	</flores>
+
+	<utensilios>
+		<utensilio1 cantidad="">
+			<nombre> </nombre>
+		</utensilio1>
+
+		<utensilio2 cantidad="">
+			<nombre> </nombre>
+		</utensilio2>
+
+		<utensilio3 cantidad="">
+			<nombre> </nombre>
+		</utensilio3>
+
+		<utensilio4 cantidad="">
+			<nombre> </nombre>
+		</utensilio4>
+
+	</utensilios>
+
+</Almacendepedidos>
