@@ -3,7 +3,7 @@
 # Instalación de Git en Linux
 
 <p align="center">
-  <img src="https://www3.gobiernodecanarias.org/medusa/edublog/iespuertodelacruztelesforobravo/wp-content/uploads/sites/408/2021/06/logotipo-fondo-transparente-4.png" witdh="500px">
+  <img src="https://logos-marcas.com/wp-content/uploads/2020/11/GitHub-Logo.png" witdh="500px">
   </p>
 
 # Índice
