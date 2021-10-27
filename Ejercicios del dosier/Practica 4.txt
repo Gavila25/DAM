@@ -1,8 +1,0 @@
-﻿Práctica 4:  Introducir en un código java de NetBeans la siguiente línea:
-
-long variable = 123400000000;
-
-¿qué mensaje muestra el IDE? 
-
-El IDE muestra un mensaje diciendo integer number too large: 123400000000, dice que el numero es muy largo para poder mostralo.
-
