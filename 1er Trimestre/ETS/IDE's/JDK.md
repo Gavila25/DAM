@@ -1,12 +1,16 @@
+<p align="justify">
+
 # Instalación JDK en Ubuntu
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OpenJDK_logo.svg/1280px-OpenJDK_logo.svg.png" width="300px">
+  </p>
 
-### Realizado por: Guillermo Francisco Avila Martín
 
-## Índice 
-1. Introducción
-2. Pasos a realizar
-3. ¿Como instalar una versión especifica de Java?
-4. Como cambiar de versión de Java
+## Índice
+1. [Introducción](#Introducción)
+2. [Pasos a realizar](#Pasos-a-realizar)
+3. [¿Como instalar una versión específica de Java?](#¿Como-instalar-una-versión-específica-de-Java?)
+4. [Como cambiar de versión de Java](#Como-cambiar-de-versión-de-Java)
 
 ## 1- Introducción
 Con esta simple y corta guía que encontraras a continuación podras realizar la instalación de Java JDK, al igual, que cambiar la versión de este para el sistema operativo Ubuntu (20.04)
@@ -14,27 +18,23 @@ Con esta simple y corta guía que encontraras a continuación podras realizar la
 ## 2- Pasos a realizar
 
 - Lo primero que debemos realizar es averiguar si tenemos instalado el Java mediante este comando:
-```
-java -version 
+```consola
+java -version
  ```
-  <img src="JAVA JDK/Practica 1 JDK (2).png" alt="Captura de la función del comando" width="50%" height="60%">
-  
+
 - Acto seguido procederemos a comenzar la instalción de Java con este comando:
-```
+```consola
   sudo apt-get update
 ```  
-  <img src="JAVA JDK/Practica 1 JDK (3).png" alt="Captura de la función del comando" width="50%" height="60%">
-  
+
 - Instalamos Java con este comando y se nos instalará la ultima versión de Java:
-```
+```consola
   sudo apt-get install default-jdk
 ```  
-  <img src="JAVA JDK/Practica 1 JDK (4).png" alt="Captura de la función del comando" width="50%" height="60%">
-  
+
 - Comprobamos la versión de java una vez instalada.
 
-  <img src="JAVA JDK/Practica 9 JDK lista de versiones (2).png" alt="Captura de la función del comando" width="50%" height="60%">
-  
+
 ## 3- ¿Cómo instalar una versión específica de Java?
 
 Para instalar una versión especifica
@@ -42,30 +42,26 @@ Para instalar una versión especifica
 - OpenJDK
 
 - Versión 11
-```
+```consola
   sudo apt install openjdk-11-jdk
 ```  
 - Versión 9
-```
+```consola
   sudo apt install openjdk-9-jre
 ```  
 - Versión 8
-```
+```consola
   sudo apt install openjdk-8-jre
-``` 
-  <img src="JAVA JDK/Practica 9 JDK lista de versiones (3).png" alt="Captura de la función del comando" width="50%" height="60%">
-  
-La versión con la que vamos a trabajar es la versión 8. Para ello debemos verificar la versión de java que se esta ejecutando con el comando:
 ```
+
+La versión con la que vamos a trabajar es la versión 8. Para ello debemos verificar la versión de java que se esta ejecutando con el comando:
+```consola
   java -versión
 ```  
 ## 4- Como cambiar de versión de Java
 
 Para saber las versiones con las que podemos contar usaremos este comando:
-```
+
+```consola
 sudo update-alternative --config java
 ```
-<img src="JAVA JDK/Solucion problema nano Practica 10 (2).png" alt="Captura de la función del comando" width="50%" height="60%">
-
-
-  
