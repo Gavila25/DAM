@@ -1,7 +1,9 @@
 <p align="justify">
 
 # Instalación de Netbeans
-
+<p align="center">
+  <img src="https://victomanolo.files.wordpress.com/2018/01/logo.png">
+  </p>
 
 ## Índice
 1. Portada
