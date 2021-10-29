@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:element name="codigo" type="xsd:string"/>
+   	<xsd:attribute name="cadena" type="xsd:string"/>
+   	<xsd:string name="cadena">
+   	<xsd:restriction base="xsd:string">
+   		<xsd:pattern value="[A-Z]{2}[0-9]{2}[A-Z,a-z]{3}"/>
+   	</xsd:restriction>
+   </xsd:string>
+</xsd:schema>
+
+<codigo>
+	<cadena> JJ99aaB </cadena>
+</codigo>
