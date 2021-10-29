@@ -1,5 +1,7 @@
-# Instalación de Netbeans 
-Imagen
+<p align="justify">
+
+# Instalación de Netbeans
+
 
 ## Índice
 1. Portada
@@ -30,3 +32,4 @@ chmod +x jdk-8u111-nb-8_2-linux-x64.sh
 Cuarto paso:
 
 Cuando el comando terminé de trabajar, solo falta realizar los pasos que dice el programa y listo, tendremos netbeans 8 instalado.
+</p>
