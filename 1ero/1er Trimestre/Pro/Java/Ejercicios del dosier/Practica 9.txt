@@ -1,6 +1,0 @@
-﻿Práctica 9:   Sea: a, b enteros; c,d reales; e,f carácter;  g de tipo lógico. ¿ qué asignaciones son
-válidas y cuáles no?. Justifica por qué no
-a) a = 20; (Valido)	b) b = 5500;(Valido) 	c) e = ‘f’;(Valido)
-d) g = true; (Valido)	f) b = 12; (Valido)	g) c = 0; (Valido)
-h) e = f; (Valido)	i) g = “false”; (No valido, porque esta metiendo el carácter FALSE) j) f = ‘0’;
-k) d = c (Valido)	l) a = 12.56; (No valido, porque no es un numero entero sino real)	m) f = g;(No valido, porque esta metiendo la variable g, no el carácter “G”).
