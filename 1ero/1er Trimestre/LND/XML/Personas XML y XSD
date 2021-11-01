@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema
+	xmls:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="nombre" type="tiponombre">
+	<xsd:element name="fechaDeNacimiento"
+				 type="tipodia"
+				 type="tipomes"
+				 type="tipoanyo">
+	<xsd:simpleType name="tipodia">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="01"/>
+			<xsd:maxInclusive value="31"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipomes">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="Enero"/>
+			<xsd:maxInclusive value="Diciembre"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipoanyo">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive vale="1900"/>
+			<xsd:maxInclusive value="2011"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tiponombre">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minLength value="0"/>
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="direccion"
+				 type="tipocalle"
+				 type="tipopoblación"
+				 type="tipoprovincia"
+				 type="tipoCpostal">
+	<xsd:simpleType name="tipocalle">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minLength value="0"/>
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipopoblación">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minLength value="0"/>
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipoprovincia">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minLength value="0"/>
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="tipoCpostal">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minLength value="0"/>
+			<xsd:maxLength value="50"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="varon" type="xsd:boolean"/>
+	<xsd:element name="hembra" type="xsd:boolean"/>
+</xsd:schema>
+
+
+<persona>
+	<nombre> Juan Padro </nombre>
+	<fechaDeNacimiento dia="10" mes="Abril" anyo="1982"/>
+	<direccion>
+		<calle> Caoba,1 </calle>
+		<poblacion> Madrid </poblacion>
+		<provincia> Madrid </provincia>
+		<cPostal> 28005 </cPostal>
+		<varon/>
+	</direccion>
+</persona>
+
+<persona>
+	<nombre> María Lopez </nombre>
+	<direccion>
+		<direccion numero="1">
+			<calle>Roncato,1</calle>
+			<poblacion> Illescas </poblacion>
+			<provincia> Toledo </provincia>
+			<cPostal> 45200 </cPostal>
+		</direccion>
+		<direccion numero="2">
+			<calle> Paseo de la Esperanza,15</calle>
+			<portal> 1ºA </portal>
+			<provincia> Madrid </provincia>
+			<poblacion> Madrid </poblacion>
+			<cPostal> 28005 </cPostal>
+		</direccion>
+	</direccion>
+</persona>
