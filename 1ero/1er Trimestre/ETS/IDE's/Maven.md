@@ -1,11 +1,17 @@
+<p align="justify">
+   
 # Instalación de Maven en el SO Ubunut (20.04)
-
+   
+<p align="center">
+   <img src="https://svn.apache.org/repos/infra/websites/staging/maven/trunk/content/images/apache-maven-project.png">
+</p>
+   
 ## Índice
 
-- Titulo
-- Índice
-- Introducción
-- Pasos a Realizar
+- [Titulo](#Instalacion-de-Maven-en-el-SO-Ubuntu-(20.04))
+- [Índice](#Índice)
+- [Introducción](#Introducción)
+- [Pasos a Realizar](#Pasos-a-Realizar)
 
 ## Introducción
 Con este tutorial escrito acompañado de algunas imágenes, veremos cómo realizar la instalación de apache maven en Ubuntu. Esta es una herramienta de gestión y comprensión de código abierto que se utiliza principalmente para proyectos Java.
@@ -16,27 +22,17 @@ Con este tutorial escrito acompañado de algunas imágenes, veremos cómo realiz
 ```
 sudo apt update
 ```  
-   Y nos saldría algo como en esta imagen:
-  
-   <img src="Maven/sudo apt update.png"  width="70%" height="80%">
-  
- - Luego usaremos el comando:
+
+- Luego usaremos el comando:
  ```
  sudo apt install maven
  ```
-   En nustra consola se vería como la imagen adjunta:
-    
-   <img src="Maven/sudo apt install maven.png"  width="70%" height="80%">
-   
-  - Para verificar la instalación del programa y ver la versión instalada usamos el comando:
+  
+ - Para verificar la instalación del programa y ver la versión instalada usamos el comando:
   ```  
   mvn -version 
   ```
   
-   Y este nos diría que version tenemos instalada como en la imagen:
-   
-   <img src="Maven/mvn -version.png"  width="70%" height="80%">
-   
- - Con estó dariamos por finalizada la instalación de Maven en el SO.
-   
-    
+ Con estó dariamos por finalizada la instalación de Maven en el SO.
+ 
+ </p>
