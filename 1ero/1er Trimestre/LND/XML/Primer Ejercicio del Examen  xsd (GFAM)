@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmls:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="lista">
+    <xsd:element name="componente"/>
+      <xsd:element name="tarjetagrafica"/>
+        <xsd:element name="memoria" type="xsd:integer">
+          <xsd:pattern value="[GB-TB]{1}"/>
+        </xsd:element>
+        <xsd:element name="codigo" type="xsd:integer">
+            <xsd:minInclusive value="6"/>
+            <xsd:maxInclusive value="6"/>
+        </xsd:element>
+        <xsd:element name="monitor" type="tamaniomonitor">
+          <xsd:restriction name="monitor" type="xsd:integer">
+            <xsd:minInclusive value="0"/>
+          </xsd:restriction>
+        </xsd:element>
+        <xsd:element name="precio" type="tipoprecio">
+          <xsd:restriction name="precio" type="xsd:double">
+            <xsd:minInclusive value="0"/>
+          </xsd:restriction>
+        </xsd:element>
+        <xsd:element name="moneda" type="tipomoneda">
+          <xsd:restriction name="moneda" type="xsd:string">
+            <xsd:minInclusive value="Euro"/>
+            <xsd:maxInclusive value="Dolar"/>
+          </xsd:restriction>
+        </xsd:element>
+</xsd:schema>
+
+
+
+
+<lista>
+  <componente>
+    <tarjetagrafica>
+      <memoria>2GB</memoria>
+      <precio moneda="euros">190</precio>
+    </tarjetagrafica>
+  </componente>
+  <componente codigo="123456">
+    <monitor>
+      <tamanio>14</tamanio>
+      <precio moneda="euros">99.49</precio>
+    </monitor>
+  </componente>
+</listas>

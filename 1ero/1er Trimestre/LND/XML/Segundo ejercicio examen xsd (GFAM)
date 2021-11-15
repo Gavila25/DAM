@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<xsd:schema xmls:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="lista"/>
+		<xsd:element name="producto" type="xsd:string">
+			<xsd:element name="codigo" type="tipocodigo">
+					<xsd:restriction name="codigo" base="xsd:string">
+						<xsd:pattern value="[A-Z]{2}[-]{1}[1-9]{2,3}">
+						</xsd:pattern>
+					</xsd:restriction>
+			</xsd:element>
+	<xsd:element name="descripcion" type="xsd:string" value="optativo"/>
+	<xsd:element name="peso" type="tipopeso">
+		<xsd:restriction name="peso" base="xsd:double">
+			<xsd:minInclusive value="0"/>
+		</xsd:restriction>
+	</xsd:element>
+</xsd:schema>
+		
+
+<lista>
+  <producto codigo="DX-22"><!--Codigo obligatorio-->
+    <descripcion>Ordenador</descripcion><!--Optativa-->
+    <peso>23.44</peso><!--Positivo con decimales-->
+  </producto>
+  <producto codigo="CX-124">
+    <peso>17.50</peso>
+  </producto>
+  <producto codigo="CX-124">
+    <peso>17.50</peso>
+  </producto>
+</lista>
