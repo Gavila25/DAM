@@ -1,11 +1,8 @@
 # Instalación de Netbeans 12 en Ubuntu
 <p align=center>
-  <img src="Capturas Netbeans/logotipo-instituto trabajos.png" width="60%" height="50%">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/666px-Apache_NetBeans_Logo.svg.png" width="20%" height="30%">
 </p>
 
-<p align=center>
-  <img src="Capturas Netbeans/Logo net12.png" width="20%" height="20%">
-</p>
 
 # Índice
 1. [Título](#Instalación-de-Netbeans-12-en-Ubuntu).
@@ -19,15 +16,13 @@ Primero comprobaremos la versión de java ejecutando el comando:
 ```
 java -version
 ```
- <img src="Capturas Netbeans/Java version para todo.png" width="50%" height="50%">
- 
+  
 Segundo paso:
 
 Después de comprobar la versión de Java. Usaríamos este comando para realizar la descarga.
 ```
 sudo snap install netbeans --classic
 ```
- <img src="Capturas Netbeans/Cap Net12.png" width="50%" height="50%">
  
 Cuando la instalación esté completada saldrá algo como ésto netbeans 12.5 from Apache NetBeans✓ installed
 
