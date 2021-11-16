@@ -1,0 +1,20 @@
+﻿Práctica 13: 
+Sea el siguiente programa:
+
+
+public static void main(String[] args) {
+Scanner cin = new Scanner(System.in);
+System.out.println("Introduzca un número mayor que 5 ");
+int numero = cin.nextInt();
+boolean comparaCon5;
+comparaCon5 = numero > 5;
+System.out.println("Es " + comparaCon5 + " que el número sea mayor que 5");
+}
+
+
+Ejecutarlo e introducir un número mayor que 5 ¿ qué mensaje muestra ? Ahora introduce un
+número menor que 5 ¿ qué mensaje muestra ahora ?.
+
+
+Cuando introducimos el número mayor que 5, dice que es verdadero y que el número es mayor que 5.
+Cuando introducimos el número menor que 5, dice que es falso y que el número no es mayor que 5.

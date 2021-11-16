@@ -1,0 +1,25 @@
+﻿Práctica 11: 
+Introducir en un código java de NetBeans las siguientes líneas:
+int x,y;
+x= 3;
+y= 4;
+y *= ++x;
+System.out.println("x=" + x +" y=" + y);
+
+
+¿ Qué resultado sale para los valores x e y ? Escribe las líneas de código equivalentes si no usáramos el operador incremento: ++ ni el operador de asignación combinado: *=
+
+
+Con el código sin tocar sale que la “x=4” y la “y=16”. El código cambiado sería:
+
+
+         int x,y;
+            x = 3;
+            y = 4;
+            x=x+1;
+               int resultado= y*x;
+            
+            System.out.println("x=" + x + " y=" + resultado);
+
+
+Y el resultado sería “x=4” y y”=16”, hacemos que a x se le sume 1 y luego en la variable resultado hacemos la multiplicación para que nos dé el resultado anterior.

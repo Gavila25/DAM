@@ -1,0 +1,12 @@
+﻿Practica 3:
+Determinar que tipo de datos es más apropiado en cada caso para guardar la
+siguiente información:
+
+1. Si un empleado está casado o no. (Booleano)
+2.     999999. (Float)
+3.     Día de la semana (Char)
+4.     Día del año. (Char)
+5.     Sexo: con dos valores posibles 'V' o 'M' (Char)
+6.     Milisegundos transcurridos desde el 01/01/1970 hasta nuestros días. (Double)
+7.     Almacenar el total de una factura (Double)
+8.     Población mundial del planeta tierra. (Double)
