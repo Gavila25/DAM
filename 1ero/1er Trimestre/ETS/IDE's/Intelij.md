@@ -3,7 +3,7 @@
 # Instalacion De Intelij
 
 <p align="center">
-<img src="https://tse3.mm.bing.net/th?id=OIP.VB-9FEz3qDn1paIBoz_hqwHaHa&pid=Api&P=0&w=300&h=300" width="20%" height="20%">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/IntelliJ_IDEA_Icon.svg/1024px-IntelliJ_IDEA_Icon.svg.png" width="20%" height="20%">
 </p>
 
 # Índice
