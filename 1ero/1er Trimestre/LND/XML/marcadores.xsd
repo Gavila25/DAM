@@ -1,0 +1,10 @@
+<marcadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="marcadores.xsd">
+    
+    <xsi:element name="pagina"/>
+    <xsi:complextype>
+        <xsi:sequence>
+            <xsi:element name="nombre" type="xsi:string"/>
+            <xsi:element name="descripcion" type="xsi:string"/>
+            <xsi:element name="url" type="xsi:anyURL"/>
+        </xsi:sequence>
+    </xsi:complextype>
