@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="nombre">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="200"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="fechaNacimiento">
+    <xs:simpleType>
+        <xs:attribute name="edad"/>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="16"/>
+            <xs:maxInclusive value="65"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:element name="cantidad">
+    <xs:simpleType>
+        <xs:restriction base="xs:double">
+            <xs:minExclusive value="1000"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:simpleType name="dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[A-Z]{1}"></xs:pattern>
+        </xs:restriction>
+</xs:simpleType>
+
+
+<xs:element name="facturas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nombre" use="required"/>
+            <xs:element ref="fechaNacimiento"/>
+            <xs:element name="entrada" type="xs:dateTime"/>
+            <xs:element name="salida" type="xs:dateTime"/>
+            <xs:element name="precio" type="xs:double"/>
+            <xs:element ref="cantidad"/>
+            <xs:element name="pagado" type="xs:boolean" default="false"/>
+            <xs:element ref="dni" use="required"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>    
+</xs:schema>
+
+
+
+
+<facturas>
+    <factura>
+        <nombre>Javier Toledano</nombre>
+        <fechaNacimiento>1979-02-04</fechaNacimiento>
+        <entrada>23:10:15</entrada>
+        <salida>23:55:15</salida>
+        <precio>123.56</precio>
+        <cantidad>678.23</cantidad>
+        <pagado>true</pagado>
+    </factura>
+</facturas>

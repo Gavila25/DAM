@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name="matricula"/>
     <xs:element name="dni" type="xs:string"/>
     <xs:simpleType name="dni">
         <xs:restriction base="xs:string">
-            <xs:pattern value="[0,9]{8}-[A,Z]{1}"/>
+            <xs:pattern value="[1-9]{8}[A-Z]{1}"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:complexType name="personal">
-        <xs:sequence>
-            <xs:element ref="dni"/>
-            <xs:element name="nombre" type="xs:string"/>
-            <xs:element name="titulacion" type="xs:string"/>
-            <xs:element name="curso_academico" type="xs:string"></xs:element>
-        </xs:sequence>
-    </xs:complexType>
+    <xs:element name="personal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dni"/>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="titulacion" type="xs:string"/>
+                <xs:element name="curso_academico" type="xs:string"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
     <xs:complexType name="domicilio">
         <xs:attribute name="tipo" type="xs:string"/>
@@ -27,6 +30,7 @@
                 <xs:element name="nombre" type="xs:string" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
+
     <xs:complexType name="pago">
         <xs:sequence>
             <xs:element name="pago" maxOccurs="unbounded"/>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="chupetes"/>
+    <xs:complexType name="chupete">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="fresa"/>
+                <xs:element name="vainilla"/>
+            </xs:choice>
+            <xs:element name="chocolate"/>
+        </xs:sequence>
+        <xs:attribute name="marca">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[COD]-[0-9]|[A-Z]|[a-z]{3}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+</xs:schema>
+
+
+<chupetes>
+    <chupete>
+        <fresa />
+        <chocolate />
+    </chupete>
+
+    <chupete>
+        <fresa />
+        <chocolate />
+    </chupete>
+</chupetes>
