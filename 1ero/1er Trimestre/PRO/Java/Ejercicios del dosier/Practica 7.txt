@@ -1,0 +1,12 @@
+﻿Práctica 7:  Introducir en un código java de NetBeans las siguientes línea:
+
+final int MAXIMO = 23;
+MAXIMO = 12;
+
+¿muestra el IDE algo diferente ? ¿se puede ejecutar el programa? 
+
+Muestra que no se puede asignar nada a la variable MAXIMO y si intentamos ejecutar el programa salta este error.
+
+Exception in thread "main" java.lang.RuntimeException: Uncompilable source code - cannot assign a value to final variable MAXIMO at es.iesptodelacruz.GFAM.PracticasNetbeansDossier.main(PracticasNetbeansDossier.java:34)
+/home/alumno/.cache/netbeans/8.2/executor-snippets/run.xml:53: Java returned: 1
+BUILD FAILED (total time: 5 seconds)

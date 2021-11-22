@@ -1,0 +1,21 @@
+﻿Práctica 14: 
+Si tenemos las líneas de código:
+
+
+int x=3, y=4;
+int z = !(x<=y)?x:y ;
+System.out.println(z);
+¿qué valor nos va a mostrar en pantalla ?
+En la pantalla nos va a mostrar 4
+
+
+Escribe ahora
+System.out.println( 5 > 3 );
+¿ qué muestra en pantalla ?
+Nos da un valor booleano que en este caso sería True, porque el 5 es mayor que 3. 
+
+
+y ahora escribe:
+System.out.println( 5 < 3 );
+¿ qué muestra la pantalla ?
+Ahora nos muestra el valor booleano de false, porque 5 no es menor que 3.
