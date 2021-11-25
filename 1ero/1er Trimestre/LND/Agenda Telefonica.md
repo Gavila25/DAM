@@ -1,3 +1,5 @@
+<p align="justify">
+  
 # Agenda Telefónica con XML
 
 ## Índice
@@ -13,4 +15,23 @@ Yo entiendo que tenemos que crear una etiqueta llamada “agenda”, donde pondr
 
 Con estos campos creados, en caso de tener que buscar la información de alguna persona en la agenda, podemos filtrarla por provincia, población y código postal para buscar el contacto deseado. 
 
-<img src="Captura Agenda.png"  width="50%" height="60%">
+```xml
+  <?xml version="1.0" encoding="iso-8859-1"?>
+<agenda>
+	<contacto>
+		<nombre> Guillermo Fco. </nombre>
+		<apellidos> Avila Martín </apellidos>
+		<direccion calle="Calle Valois" numero="11" piso="1"/> 
+		<poblacion> Puerto de la Cruz </poblacion>
+		<provincia> Santa Cruz de Tenerife </provincia>
+		<codigo_postal> 38400 </codigo_postal>
+		<telefonos>
+			<telefono_casa> 922 38 99 72 </telefono_casa>
+			<telefono_movil> 630 89 54 32 </telefono_movil>
+			<telefono_trabajo> 922 87 97 19 </telefono_trabajo>
+		</telefonos>
+	</contacto>
+</agenda>
+```
+  
+</p>
