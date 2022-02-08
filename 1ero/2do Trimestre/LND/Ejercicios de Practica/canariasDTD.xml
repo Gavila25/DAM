@@ -1,0 +1,25 @@
+<!DOCTYPE canariasCorre[
+    <!ELEMENT canariasCorre (evento+)>
+    <!ELEMENT evento (organizadores+,participantes+)>
+    <!ATTLIST evento 
+    tipo (maraton | carrera | trail) ID #REQUIRED
+    fecha (CDDATA) ID #REQUIRED
+    >
+    <!ELEMENT organizadores (empresa, telefono, direccion, municipio)>
+    <!ELEMENT empresa (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT municipio (#PCDATA)>
+
+    <!ELEMENT participantes (nombre,telefono,direccion,municipio)>
+    <!ATTLIST participantes 
+    categoria (Profesional | Amateur ) "Amateur">
+    
+    <!ATTLIST nombre 
+    sexo (Hombre|Mujer) ID #REQUIRED
+    atletaFederado(Si|No) "no">
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT municipio (#PCDATA)>
+]>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<canariasCorre>
+    <evento tipo="maraton" fecha="08/05/2014">
+        <titulo>Anaga Maraton</titulo>
+        <km>42 km</km>
+        
+        <organizadores>
+            <empresa>Gesport Canarias</empresa>
+            <telefono>922740025</telefono>
+            <direccion>C/El Juego nº 25</direccion>
+            <municipio>La Laguna</municipio>
+        </organizadores>
+
+        <organizadores>
+            <empresa>Producciones Anaga</empresa>
+            <telefono> 922350035</telefono>
+            <direccion>C/ Desengaño nº 21</direccion>
+            <municipio>Santa Cruz de Tenerife</municipio>
+        </organizadores>
+
+        <participantes categoria="Profesional">
+            <nombre sexo="Hombre" atletaFederado=" Si">Esteban Jodrá</nombre>
+            <telefono>630101010</telefono>
+            <direccion>C/Las Rosas nº 25</direccion>
+            <municipio>Santa Cruz de Tenerife</municipio>
+        </participantes>
+
+        <participantes categoria="Amateur">
+            <nombre sexo="Mujer" atletaFederado="No">Eva Mérida</nombre>
+            <telefono>640000099</telefono>
+            <direccion>C/Las Margaritas nº 25</direccion>
+            <municipio>Arafo</municipio>
+        </participantes>
+
+        <participantes categoria="Amateur">
+            <nombre sexo="Mujer" atletaFederado="No">Ana Covadonga</nombre>
+            <telefono>922787878</telefono>
+            <direccion>C/Las Dalias nº 28</direccion>
+            <municipio>Arafo</municipio>
+        </participantes>
+    </evento>
+
+    <evento tipo="Carrera" fecha="31/12/2014">
+        <titulo>IV San Silvestre El Medano</titulo>
+        <km>10 km</km>
+        <organizadores>
+            <empresa>Gesports Canarias</empresa>
+            <telefono>922740025</telefono>
+            <direccion>C/El Juego nº 25</direccion>
+            <municipio>La Laguna</municipio>
+        </organizadores>
+        <participantes categoria="Profesional">
+            <nombre sexo="Hombre" atletaFederado=" Si">Javier Madrigal</nombre>
+            <telefono>92220025</telefono>
+            <direccion>C/Las Petunias</direccion>
+            <municipio>La Laguna</municipio>
+        </participantes>
+        <participantes categoria="Profesional">
+            <nombre sexo="Hombre" atletaFederado=" Si">Victor Madrigal</nombre>
+            <telefono>92220025</telefono>
+            <direccion>C/Las Petunias</direccion>
+            <municipio>La Laguna</municipio>
+        </participantes>
+    </evento>
+</canariasCorre>

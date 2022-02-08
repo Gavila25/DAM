@@ -1,0 +1,58 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="canariasCorre">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="evento" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="evento">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="organizadores" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:element ref="participantes" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="tipo" type="xs:string" use="required"/>
+        <xs:attribute name="fecha" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="organizadores">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="empresa" type="xs:string"/>
+            <xs:element name="telefono" type="xs:int"/>
+            <xs:element name="direccion" type="xs:string"/>
+            <xs:element name="municipio" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="participantes">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="tipoParticipantes"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="categoria" default="Amateur" type="xs:string"/>
+        <xs:attribute name="sexo" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="tipoParticipantes">
+    <xs:complexType>
+                <xs:sequence>
+                    <xs:element ref="nombre"/>
+                    <xs:element name="telefono" type="xs:int"/>
+                    <xs:element name="direccion" type="xs:string"/>
+                    <xs:element name="municipio" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+</xs:element>
+
+<xs:element name="nombre">
+    <xs:complexType>
+        <xs:attribute name="atletaFederado" type="xs:string" use="optional" default="no"/>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

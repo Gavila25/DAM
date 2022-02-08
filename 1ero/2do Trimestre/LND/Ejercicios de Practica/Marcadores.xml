@@ -1,0 +1,15 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="marcadores"/>
+<xs:complexType name="marcadores">
+    <xs:sequence>
+        <xs:element name="pagina" maxOccurs="unbounded" minOccurs="0"/>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element name="descripcion" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+                <xs:element name="url" type="xs:anyURI" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

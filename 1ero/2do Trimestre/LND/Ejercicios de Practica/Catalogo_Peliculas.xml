@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="titulo" type="xs:string"/>
+<xs:element name="titulo_original" type="xs:string"/>
+<xs:element name="nacionalidad" type="xs:string"/>
+<xs:element name="genero" type="xs:string"/>
+<xs:element name="sinopsis" type="tipoSinopsis"/>
+<xs:simpleType name="tipoSinopsis">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="0"/>
+        <xs:maxLength value="100"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:element name="director" type="xs:string"/>
+<xs:element name="reparto" type="tipoReparto"/>
+<xs:complexType name="tipoReparto">
+    <xs:sequence>
+        <xs:element name="actor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="web" type="xs:anyURI"/>
+<xs:element name="cartel" type="xs:anyType"/>
+
+<xs:element name="categoria" type="tipoCategoria"/>
+<xs:complexType name="tipoCategoria">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="edad" type="xs:string" default="tp"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:element name="anyo" type="xs:integer" default="2003"/>
+
+
+
+
+<xs:complexType name="cartelera">
+    <xs:sequence>
+        <xs:element ref="titulo" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="nacionalidad" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="genero" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="categoria" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="sinopsis" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="director" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="reparto" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="web" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="cartel" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="anyo" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+
+</xs:schema>

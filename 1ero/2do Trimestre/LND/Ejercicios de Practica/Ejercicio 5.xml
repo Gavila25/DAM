@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="fichas.xsd">
+   <ficha>
+      <nombre>Ana Sanz Tin</nombre>
+      <clave>G8w2</clave>
+   </ficha>
+   <ficha>
+      <nombre>Iker Rubio Mol</nombre>
+      <clave>ag32Ue7AFF</clave>
+   </ficha>
+</fichas>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="clave">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([a-z]|[0-9])+"/>
+            <xs:minLength value="4"/>
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:complexType name="ficha">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string" maxOccurs="unbounded"/>
+        <xs:element ref="clave" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

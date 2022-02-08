@@ -1,0 +1,43 @@
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="origen" type="xs:string"/>
+<xs:element name="destino" type="xs:string"/>
+<xs:element name="hora-salida" type="xs:time"/>
+<xs:element name="hora-llegada" type="xs:time"/>
+<xs:element name="fecha" type="xs:date"/>
+
+<xs:element name="vuelo">
+    <xs:complexType>
+        <xs:attribute name="codigo" type="xs:ID" use="required"/>
+        <xs:attribute name="estadp" type="tipoEstado" default="E"/>
+        
+    </xs:complexType>
+    
+</xs:element>
+
+<xs:simpleType name="tipoEstado">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[C|E|R]"></xs:pattern>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="vuelo">
+    <xs:all>
+        <xs:element ref="nombre"/>
+        <xs:element ref="origen"/>
+        <xs:element ref="destino"/>
+        <xs:element ref="hora-salida"/>
+        <xs:element ref="hora-llegada"/>
+        <xs:element ref="fecha"/>
+    </xs:all>
+</xs:complexType>
+
+
+<xs:complexType name="vuelos">
+    <xs:sequence>
+        <xs:element ref="vuelo" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

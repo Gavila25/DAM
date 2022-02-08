@@ -1,0 +1,3 @@
+class Lector {
+    String nombre;
+}
