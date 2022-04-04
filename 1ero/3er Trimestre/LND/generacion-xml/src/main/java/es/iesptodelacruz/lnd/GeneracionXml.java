@@ -43,8 +43,7 @@ public final class GeneracionXml extends Utilidades{
         System.out.println("\n"+generarEtiquetasXml2+"\n"+
         generarEtiquetasRss2+"\n\t"+
         generarEtiquetaChannel+"\n\t\t"+generarEtiquetaItem+"\n\t\t</item>"
-        +"\n\t</channel"+"\n</rss>");
+        +"\n\t</channel>"+"\n</rss>");
         
-
     }
 }
