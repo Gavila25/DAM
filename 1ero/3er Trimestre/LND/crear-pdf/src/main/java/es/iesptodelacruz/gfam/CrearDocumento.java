@@ -37,6 +37,14 @@ public class CrearDocumento {
         return contenido;
     }
 
+    /**
+     * Función para crear la imagen que va a llevar la página
+     * @param documento documento que hemos creado
+     * @param ruta ruta de la imagen que vamos a insertar
+     * @param nombreFoto nombre para guardar la imagen
+     * @return la imagen escalada
+     * @throws IOException
+     */
     public static PDImageXObject agregarImagen(PDDocument documento,String ruta,String nombreFoto) throws IOException{
         PDImageXObject imagen = PDImageXObject.createFromByteArray(documento, Main.class.getResourceAsStream(ruta).readAllBytes(), nombreFoto);
         return imagen;
