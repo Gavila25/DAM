@@ -14,7 +14,7 @@ public final class GeneracionXml extends Utilidades{
      */
     public static void main(String[] args) {
         
-        //Con este codigo logro realizar con exito lo pedido en el ejercicio
+        
         Utilidades ut1=new Utilidades();
         String generarEtiquetasXml = ut1.generarEtiquetasXml();
         String generarEtiquetasRss = ut1.generarEtiquetasRss();
@@ -29,8 +29,7 @@ public final class GeneracionXml extends Utilidades{
         generarEtiquetaChannel+"\n\t</channel>"+"\n</rss>");
 
 
-        //Esto es por ver si me sale, no me lo tomes en cuenta si sale mal.
-        //Pretendo lograr poder crearlo con todos las etiquetas necesarios, eso incluye los items
+        
         String generarEtiquetasXml2 = ut1.generarEtiquetasXml();
         String generarEtiquetasRss2 = ut1.generarEtiquetasRss();
         String generarEtiquetaTitle2 = ut1.generarEtiquetaTitle("Tarea 2");

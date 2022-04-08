@@ -30,7 +30,7 @@ public class CrearDocumento {
     public static PDPageContentStream crearContenido(PDDocument documento,PDPage pagina,String titulo) throws IOException{
         PDPageContentStream contenido=new PDPageContentStream(documento, pagina);
         contenido.beginText();
-        contenido.setFont(PDType1Font.TIMES_BOLD, 32);
+        contenido.setFont(PDType1Font.TIMES_BOLD_ITALIC, 32);
         contenido.newLineAtOffset( 20, pagina.getMediaBox().getHeight() - 52);
         contenido.showText(titulo);
         contenido.endText();
