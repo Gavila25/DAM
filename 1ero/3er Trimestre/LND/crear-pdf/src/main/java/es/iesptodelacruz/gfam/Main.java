@@ -5,33 +5,41 @@ import java.util.Scanner;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 public class Main {
 
+    
+
     public static void main(String[] args) throws Exception {
+        //Creado del documento
         try (PDDocument document = new PDDocument()) {
             Scanner sc=new Scanner(System.in);
+
+            //Creada de la página
             PDPage pagina=CrearDocumento.crearPagina();
             document.addPage(pagina);
-            PDPageContentStream contentStream = new PDPageContentStream(document, pagina);
-            
-            // Text
-            contentStream.beginText();
-            contentStream.setFont(PDType1Font.TIMES_BOLD, 32);
-            contentStream.newLineAtOffset( 20, pagina.getMediaBox().getHeight() - 52);
-            contentStream.showText("Hello World!");
-            contentStream.endText();
+            System.out.println("Introduce el titulo del documento");
+            String tituloDoc=sc.nextLine();
 
-            // Image
-            PDImageXObject image = PDImageXObject.createFromByteArray(document, Main.class.getResourceAsStream("/fondo.jpg").readAllBytes(), "Fondo de DragonBall");
-            contentStream.drawImage(image, 20, 20, image.getWidth() / 3, image.getHeight() / 3);
+            //Creado del contenido de la página
+            PDPageContentStream contenido=CrearDocumento.crearContenido(document, pagina,tituloDoc);
+            //Se pide que el usuario, inserte la ruta de la imagen y el nombre de ella
+            System.out.println("Indica la ruta del la imagen");
+            String rutaImagen="/"+sc.nextLine();
+            System.out.println("Indica el nombre para la imagen");
+            String nombreImagen=sc.nextLine();
 
-            contentStream.close();
+            //Creación de la imagen
+            PDImageXObject agregarImagen = CrearDocumento.agregarImagen(document,rutaImagen,nombreImagen);
+            contenido.drawImage(agregarImagen, 25, 150, agregarImagen.getWidth() / 5, agregarImagen.getHeight() / 5);
+            contenido.close();
 
-            document.save("document.pdf");
+            //Nombrar el documento
+            System.out.println("Como quieres llamar el documento");
+            String nombreDocuemnto=sc.nextLine();
+            document.save(nombreDocuemnto+".pdf");
         }
     }
 }
