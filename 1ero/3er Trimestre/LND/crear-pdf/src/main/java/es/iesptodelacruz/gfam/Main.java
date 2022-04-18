@@ -16,15 +16,15 @@ public class Main {
         
         try (PDDocument document = new PDDocument()) {
             Scanner sc=new Scanner(System.in);
-
+            CrearDocumento nuevoDoc=new CrearDocumento();
         
-            PDPage pagina=CrearDocumento.crearPagina();
+            PDPage pagina=nuevoDoc.crearPagina();
             document.addPage(pagina);
             System.out.println("Introduce el titulo del documento");
             String tituloDoc=sc.nextLine();
 
            
-            PDPageContentStream contenido=CrearDocumento.crearContenido(document, pagina,tituloDoc);
+            PDPageContentStream contenido=nuevoDoc.crearContenido(document, pagina,tituloDoc);
             
             System.out.println("Indica la ruta del la imagen");
             String rutaImagen="/"+sc.nextLine();
@@ -32,7 +32,7 @@ public class Main {
             String nombreImagen=sc.nextLine();
 
             
-            PDImageXObject agregarImagen = CrearDocumento.agregarImagen(document,rutaImagen,nombreImagen);
+            PDImageXObject agregarImagen = nuevoDoc.agregarImagen(document,rutaImagen,nombreImagen);
             contenido.drawImage(agregarImagen, 25, 150, agregarImagen.getWidth() / 5, agregarImagen.getHeight() / 5);
             contenido.close();
 

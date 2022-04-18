@@ -15,7 +15,7 @@ public class CrearDocumento {
      * Funcion para crear la página que queremos
      * @return
      */
-    public static PDPage crearPagina(){
+    public PDPage crearPagina(){
         PDPage page = new PDPage(PDRectangle.A6);
         return page;
     }
@@ -28,7 +28,7 @@ public class CrearDocumento {
      * @return el contenido de la página
      * @throws IOException
      */
-    public static PDPageContentStream crearContenido(PDDocument documento,PDPage pagina,String titulo) throws IOException{
+    public PDPageContentStream crearContenido(PDDocument documento,PDPage pagina,String titulo) throws IOException{
         PDPageContentStream contenido=new PDPageContentStream(documento, pagina);
         contenido.beginText();
         contenido.setFont(PDType1Font.TIMES_BOLD_ITALIC, 32);
@@ -46,7 +46,7 @@ public class CrearDocumento {
      * @return la imagen escalada
      * @throws IOException
      */
-    public static PDImageXObject agregarImagen(PDDocument documento,String ruta,String nombreFoto) throws IOException{
+    public PDImageXObject agregarImagen(PDDocument documento,String ruta,String nombreFoto) throws IOException{
         PDImageXObject imagen = PDImageXObject.createFromByteArray(documento, Main.class.getResourceAsStream(ruta).readAllBytes(), nombreFoto);
         return imagen;
     }
