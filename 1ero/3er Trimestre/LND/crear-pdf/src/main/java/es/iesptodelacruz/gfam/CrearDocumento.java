@@ -8,10 +8,11 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
-public class CrearDocumento {
 
+public class CrearDocumento {
+    
     /**
-     * Función para crear la página que queremos
+     * Funcion para crear la página que queremos
      * @return
      */
     public static PDPage crearPagina(){
@@ -20,8 +21,8 @@ public class CrearDocumento {
     }
 
     /**
-     * Función para crear el contenido de la página
-     * @param documento documento donde la página y el contenido
+     * Funcion para crear el contenido de la pagina
+     * @param documento documento donde la pagina y el contenido
      * @param pagina pagina donde vamos a introducir el contenido
      * @param titulo titulo de la página
      * @return el contenido de la página
@@ -38,7 +39,7 @@ public class CrearDocumento {
     }
 
     /**
-     * Función para crear la imagen que va a llevar la página
+     * Funcion para crear la imagen que va a llevar la página
      * @param documento documento que hemos creado
      * @param ruta ruta de la imagen que vamos a insertar
      * @param nombreFoto nombre para guardar la imagen
