@@ -1,7 +1,8 @@
 package es.iesptodelacruz.gfam;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import javax.swing.text.AbstractDocument.Content;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -10,6 +11,9 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 public class CrearDocumento {
+
+    BufferedReader fichero=null;
+    StringBuilder texto=null;
     
     /**
      * Funcion para crear la página que queremos
@@ -49,6 +53,28 @@ public class CrearDocumento {
     public PDImageXObject agregarImagen(PDDocument documento,String ruta,String nombreFoto) throws IOException{
         PDImageXObject imagen = PDImageXObject.createFromByteArray(documento, Main.class.getResourceAsStream(ruta).readAllBytes(), nombreFoto);
         return imagen;
+    }
+
+    public void leerFichero(){
+        try {
+            fichero=new BufferedReader(new FileReader("\\notas.txt"));
+            String linea=fichero.readLine();
+            while(linea != null){
+                texto.append(linea);
+                linea=fichero.readLine();
+            }
+        } catch (Exception e) {
+            System.out.println("ERROR!!"+e.toString());
+        }finally{
+            try {
+                if(fichero!=null){
+                    fichero.close();
+                }
+            } catch (Exception e) {
+                System.out.println("Error!!"+e.toString());
+            }
+        }
+        System.out.println(texto);
     }
    
 }

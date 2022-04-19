@@ -1,5 +1,6 @@
 package es.iesptodelacruz.gfam;
 
+import java.io.BufferedReader;
 import java.util.Scanner;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -13,10 +14,11 @@ public class Main {
     
 
     public static void main(String[] args) throws Exception {
-        
+
         try (PDDocument document = new PDDocument()) {
             Scanner sc=new Scanner(System.in);
             CrearDocumento nuevoDoc=new CrearDocumento();
+
         
             PDPage pagina=nuevoDoc.crearPagina();
             document.addPage(pagina);
@@ -40,6 +42,8 @@ public class Main {
             System.out.println("Como quieres llamar el documento");
             String nombreDocuemnto=sc.nextLine();
             document.save(nombreDocuemnto+".pdf");
+
+            nuevoDoc.leerFichero();
         }
     }
 }
