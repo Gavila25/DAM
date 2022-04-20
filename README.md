@@ -7,15 +7,31 @@
 </p>  
 
 
-Repositorio dedicado al primer año de D.A.M
+Repositorio dedicado al primer año de DAM
 
 En este repositorio voy a estar subiendo todos los trabajos y programas creados por mi a lo largo del año.
 
-## Asignaturas
-- Lenguaje de Marcas
-- Entoronos de Desarollo
-- Programación
-- Base de Datos
-- Sistemas Informáticos
+# Años
+# [Primer año](https://github.com/Gavila25/DAM/tree/main/1ero)
+- Año del curso: 2021-2022
+### Asignaturas cursadas
+- [ ] Lenguaje de Marcas
+- [ ] Entornos de Desarollo
+- [ ] Programación
+- [ ] Base de Datos
+- [ ] Sistemas Informáticos
+- [x] Inglés
+- [x] FOL
+
+### Trimestres
+1. [Primer trimestre](https://github.com/Gavila25/DAM/tree/main/1ero/1er%20Trimestre)
+2. [Segundo trimestre](https://github.com/Gavila25/DAM/tree/main/1ero/2do%20Trimestre)
+3. [Tercer trimestre](https://github.com/Gavila25/DAM/tree/main/1ero/3er%20Trimestre)
+
+# Segundo año
+### Asignaturas
+
+
+
 
 </p>
