@@ -15,13 +15,14 @@ En este repositorio voy a estar subiendo todos los trabajos y programas creados 
 # [Primer año](https://github.com/Gavila25/DAM/tree/main/1ero)
 - Año del curso: 2021-2022
 ### Asignaturas cursadas
-1. Lenguaje de Marcas Aprobada - [ ]
-2. Entornos de Desarollo Aprobada - [ ]
-3. Programación Aprobada - [ ]
-4. Base de Datos Aprobada - [ ]
-5. Sistemas Informáticos Aprobada - [ ]
-6. Inglés Aprobada - [ ]
-7. FOL Aprobada - [x]
+- [ ] Lenguaje de Marcas
+- [ ] Entornos de Desarollo
+- [ ] Programación
+- [ ] Base de Datos
+- [ ] Sistemas Informáticos
+- [x] Inglés
+- [x] FOL
+
 ### Trimestres
 1. [Primer trimestre](https://github.com/Gavila25/DAM/tree/main/1ero/1er%20Trimestre)
 2. [Segundo trimestre](https://github.com/Gavila25/DAM/tree/main/1ero/2do%20Trimestre)
