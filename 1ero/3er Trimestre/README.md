@@ -1,4 +1,4 @@
-<p align="justify">
+<div align="justify">
 
 # 3er Trimestre Lenguaje de Marcas
 
@@ -7,5 +7,8 @@
 </p>  
 
 Carpeta creada para almacenar las practicas realizadas en el tercer trimestre
-
-</p>
+# Asignaturas
+- [Entornos de Desarollo](https://github.com/Gavila25/DAM/tree/main/1ero/3er%20Trimestre/ETS)
+- [Lenguaje de Marcas](https://github.com/Gavila25/DAM/tree/main/1ero/3er%20Trimestre/LND)
+- [Programación](https://github.com/Gavila25/DAM/tree/main/1ero/3er%20Trimestre/PRO)
+</div>
