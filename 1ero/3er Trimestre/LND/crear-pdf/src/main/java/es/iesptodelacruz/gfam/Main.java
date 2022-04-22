@@ -11,23 +11,18 @@ import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 public class Main {
 
-    
+    static CrearDocumento nuevoDoc;
 
     public static void main(String[] args) throws Exception {
-
         try (PDDocument document = new PDDocument()) {
             Scanner sc=new Scanner(System.in);
-            CrearDocumento nuevoDoc=new CrearDocumento();
-
-        
             PDPage pagina=nuevoDoc.crearPagina();
             document.addPage(pagina);
             System.out.println("Introduce el titulo del documento");
             String tituloDoc=sc.nextLine();
 
-           
             PDPageContentStream contenido=nuevoDoc.crearContenido(document, pagina,tituloDoc);
-            
+            nuevoDoc.leerFichero(document,pagina);
             System.out.println("Indica la ruta del la imagen");
             String rutaImagen="/"+sc.nextLine();
             System.out.println("Indica el nombre para la imagen");
@@ -42,8 +37,8 @@ public class Main {
             System.out.println("Como quieres llamar el documento");
             String nombreDocuemnto=sc.nextLine();
             document.save(nombreDocuemnto+".pdf");
-
-            nuevoDoc.leerFichero();
+            
         }
+        
     }
 }

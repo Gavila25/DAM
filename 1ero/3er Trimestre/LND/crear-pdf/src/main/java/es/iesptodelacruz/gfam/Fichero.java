@@ -5,9 +5,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Fichero {
     private static final String separarLineas="\n";
-
+        CrearDocumento documento;
     /**
     * Funcion encargada de leer un ficher
     * 
@@ -26,10 +27,10 @@ public class Fichero {
         }
         informacion = new StringBuilder();
         scanner = new Scanner(fichero);
-
         while (scanner.hasNextLine()) {
             String linea = scanner.nextLine(); // Guardamos la linea en un String
             informacion.append(linea + separarLineas);
+            
         }
         } catch (FicheroException e) {  
             throw e;
@@ -43,11 +44,11 @@ public class Fichero {
         return informacion.toString();
     }
 
- /**
-  * Metodo encargado de crear un fichero
-  * @param nombre del fichero a crear
-  * @throws FicheroException
-  */
+    /**
+     * Metodo encargado de crear un fichero
+    * @param nombre del fichero a crear
+    * @throws FicheroException
+    */
     public void crear(String nombre, String cadenaTexto) throws FicheroException {
         FileWriter fichero = null;
         try {
@@ -64,7 +65,6 @@ public class Fichero {
             }
         }
         }
-
     }
 
     /**
@@ -77,7 +77,7 @@ public class Fichero {
     }
 
     /**
-     * Metodo encargado de elimianr un fichero/directorio
+    * Metodo encargado de elimianr un fichero/directorio
     * @param nombre del fichero/directorio a elimina
     * @throws FicheroException error controlado
     */
@@ -92,7 +92,7 @@ public class Fichero {
     }
     
     /**
-     * Funcion que verifica si se trata de un directorio no
+    * Funcion que verifica si se trata de un directorio no
     * @param path de la ruta a validad
     * @return boolean Si/No se trata de un directorio
     */

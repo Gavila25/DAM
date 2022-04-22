@@ -3,6 +3,9 @@ package es.iesptodelacruz.gfam;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+
+import javax.swing.text.Document;
+
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -10,15 +13,11 @@ import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
+/**
+* @author Gavila25
+*/
 public class CrearDocumento {
 
-    BufferedReader fichero=null;
-    StringBuilder texto=null;
-    
-    /**
-     * Funcion para crear la página que queremos
-     * @return
-     */
     public PDPage crearPagina(){
         PDPage page = new PDPage(PDRectangle.A6);
         return page;
@@ -32,12 +31,12 @@ public class CrearDocumento {
      * @return el contenido de la página
      * @throws IOException
      */
-    public PDPageContentStream crearContenido(PDDocument documento,PDPage pagina,String titulo) throws IOException{
+    public PDPageContentStream crearContenido(PDDocument documento,PDPage pagina,String texto) throws IOException{
         PDPageContentStream contenido=new PDPageContentStream(documento, pagina);
         contenido.beginText();
         contenido.setFont(PDType1Font.TIMES_BOLD_ITALIC, 32);
         contenido.newLineAtOffset( 20, pagina.getMediaBox().getHeight() - 52);
-        contenido.showText(titulo);
+        contenido.showText(texto);
         contenido.endText();
         return contenido;
     }
@@ -55,26 +54,28 @@ public class CrearDocumento {
         return imagen;
     }
 
-    public void leerFichero(){
-        try {
-            fichero=new BufferedReader(new FileReader("\\notas.txt"));
-            String linea=fichero.readLine();
-            while(linea != null){
-                texto.append(linea);
-                linea=fichero.readLine();
-            }
-        } catch (Exception e) {
-            System.out.println("ERROR!!"+e.toString());
-        }finally{
-            try {
-                if(fichero!=null){
-                    fichero.close();
-                }
-            } catch (Exception e) {
-                System.out.println("Error!!"+e.toString());
-            }
+    public void leerFichero(PDDocument documento,PDPage page){
+    BufferedReader fichero = null;
+    StringBuilder texto = null;
+    try{
+        fichero = new BufferedReader(new FileReader("/1ero/3er Trimestre/LND/crear-pdf/src/main/resources/notas.txt"));
+        String linea = null;
+        while ((linea=fichero.readLine())!=null) {
+            texto.append(linea);
+            crearContenido(documento, page,linea);
+            linea = fichero.readLine();
         }
-        System.out.println(texto);
+    } catch(Exception e){
+        System.out.println("Error"+e.toString());
+    } finally {
+        try {
+            if (fichero != null) fichero.close();
+        } catch(Exception e){
+            System.out.println("Error"+e.toString());
+        }
     }
-
+    // salida por pantalla
+    System.out.println(texto);
+        
+    }
 }
