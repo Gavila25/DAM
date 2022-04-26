@@ -3,9 +3,6 @@ package es.iesptodelacruz.gfam;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
-import javax.swing.text.Document;
-
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -18,19 +15,21 @@ import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 */
 public class CrearDocumento {
 
+    private StringBuilder nuevoTexto;
+
     public PDPage crearPagina(){
         PDPage page = new PDPage(PDRectangle.A6);
         return page;
     }
 
     /**
-     * Funcion para crear el contenido de la pagina
-     * @param documento documento donde la pagina y el contenido
-     * @param pagina pagina donde vamos a introducir el contenido
-     * @param titulo titulo de la página
-     * @return el contenido de la página
-     * @throws IOException
-     */
+    * Funcion para crear el contenido de la pagina
+    * @param documento documento donde la pagina y el contenido
+    * @param pagina pagina donde vamos a introducir el contenido
+    * @param titulo titulo de la página
+    * @return el contenido de la página
+    * @throws IOException
+    */
     public PDPageContentStream crearContenido(PDDocument documento,PDPage pagina,String texto) throws IOException{
         PDPageContentStream contenido=new PDPageContentStream(documento, pagina);
         contenido.beginText();
@@ -42,24 +41,25 @@ public class CrearDocumento {
     }
 
     /**
-     * Funcion para crear la imagen que va a llevar la página
-     * @param documento documento que hemos creado
-     * @param ruta ruta de la imagen que vamos a insertar
-     * @param nombreFoto nombre para guardar la imagen
-     * @return la imagen escalada
-     * @throws IOException
-     */
+    * Funcion para crear la imagen que va a llevar la página
+    * @param documento documento que hemos creado
+    * @param ruta ruta de la imagen que vamos a insertar
+    * @param nombreFoto nombre para guardar la imagen
+    * @return la imagen escalada
+    * @throws IOException
+    */
     public PDImageXObject agregarImagen(PDDocument documento,String ruta,String nombreFoto) throws IOException{
         PDImageXObject imagen = PDImageXObject.createFromByteArray(documento, Main.class.getResourceAsStream(ruta).readAllBytes(), nombreFoto);
         return imagen;
     }
 
-    public void leerFichero(PDDocument documento,PDPage page){
+    public void leerFichero(PDDocument documento,PDPage page,String ruta){
     BufferedReader fichero = null;
-    StringBuilder texto = null;
+    StringBuilder texto=null;
     try{
-        fichero = new BufferedReader(new FileReader("/1ero/3er Trimestre/LND/crear-pdf/src/main/resources/notas.txt"));
+        fichero = new BufferedReader(new FileReader(ruta));
         String linea = null;
+        texto.append("");
         while ((linea=fichero.readLine())!=null) {
             texto.append(linea);
             crearContenido(documento, page,linea);

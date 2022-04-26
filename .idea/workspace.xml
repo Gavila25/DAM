@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca6fc6dc-6b6d-44d4-beb2-f3ab876afc2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/java/es/iesptodelacruz/gfam/CrearDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/java/es/iesptodelacruz/gfam/CrearDocumento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/java/es/iesptodelacruz/gfam/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/java/es/iesptodelacruz/gfam/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/resources/calificaciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/resources/fondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/src/main/resources/notas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/calificaciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/es/iesptodelacruz/gfam/CrearDocumento.class" beforeDir="false" afterPath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/es/iesptodelacruz/gfam/CrearDocumento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/es/iesptodelacruz/gfam/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/es/iesptodelacruz/gfam/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/fondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1ero/3er Trimestre/LND/crear-pdf/target/classes/notas.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28LaVDC6QlpWHl47GfcwfnhJYsF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/media/daw/Disco Duro Guillermo/DAM"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca6fc6dc-6b6d-44d4-beb2-f3ab876afc2c" name="Changes" comment="" />
+      <created>1650998341957</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650998341957</updated>
+    </task>
+    <servers />
+  </component>
+</project>
